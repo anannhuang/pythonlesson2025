@@ -8,5 +8,6 @@
 - 下午：https://www.youtube.com/watch?v=EXC_aE3XmtI
 
 perplexity ->ai搜尋引擎
+
 HW: 學習markdown語法
 - https://gist.github.com/billy3321/1001749662c370887c63bb30f26c9e6e
