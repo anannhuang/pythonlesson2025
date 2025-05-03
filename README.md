@@ -1,5 +1,5 @@
-# pythonlesson2025
-致理python大數據分析課程
+# python_2025
+致理python大數據分析
 
 上課網址：https://meet.google.com/qkf-btyj-jnz
 # 0503
@@ -7,7 +7,7 @@
 - 上午：https://youtube.com/live/ds8RirjEo4M
 - 下午：https://www.youtube.com/watch?v=EXC_aE3XmtI
 
-perplexity ->ai搜尋引擎
+perplexity -> ai搜尋引擎
 
 _python是動態型別，依據變數判斷型別_
 
