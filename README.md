@@ -1,6 +1,5 @@
 # python_2025
-致理python大數據分析
-
+致理python大數據分析  
 上課網址：https://meet.google.com/qkf-btyj-jnz
 
 ## 1. 0503
@@ -17,9 +16,8 @@
 - 字串型別可相加/做乘法
 - 暫時轉換型別
 - function(函式)：print()、input()、type()、int()、float()、str()
-- import function：import math -> .sqrt()
-
-  *因內建函式庫無開根號函式，故需先從標準函式庫 (Standard Library)匯入math function，再使用math.sqrt()運算
+- import function：import math -> .sqrt()  
+   *因內建函式庫無開根號函式，故需先從標準函式庫 (Standard Library)匯入math function，再使用math.sqrt()運算
 - perplexity -> ai搜尋引擎
 
 python是 __動態型別__，依據變數判斷型別
