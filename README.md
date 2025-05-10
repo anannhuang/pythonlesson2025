@@ -22,7 +22,7 @@ ___
 
 - import function：import math -> .sqrt()  
    *因內建函式庫無開根號函式，故需先從標準函式庫 (Standard Library)匯入math function，再使用math.sqrt()運算
-- perplexity -> ai搜尋引擎
+- **perplexity** -> ai搜尋引擎
 
 python是 __`動態型別`__，依據變數判斷型別
 
@@ -37,3 +37,5 @@ __HW: 學習markdown語法__ [github中文版說明](https://gist.github.com/bil
 
 ___
 ## 2. 0510
+
+
