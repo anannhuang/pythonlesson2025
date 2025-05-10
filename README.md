@@ -49,12 +49,13 @@ ___
 - 邏輯運算子
 - 布林值(bool): True、False
 - for 迴圈：遍歷(迭代)\->重複執行
-  - for ... in ...：明確知道執行的次數
+  - for 變數 in 串列資料：for ... in ... **明確知道執行的次數**
   - 資料結構：資料類型：list、tuple、dictionary、set
 - while迴圈：無限迴圈，需要建立變數來控制while的執行與否，放在while迴圈的條件式內
+  - while 條件式(傳回布林值)
   - 若wlile迴圈執行條件為True，則一直重複執行，直到條件為False才停止
   - 使迴圈中止：break / continue   
-    -> break會使用在if判斷式中，若成立則跳出迴圈；continue若成立則底下程式不執行，跳至下一輪迴圈。
+    -> **break**會使用在if判斷式中，若成立則`跳出迴圈`；**continue**若成立則底下程式不執行，`跳至下一輪迴圈`。
 
 
 
