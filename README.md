@@ -38,7 +38,7 @@ __HW: 學習markdown語法__ [github中文版說明](https://gist.github.com/bil
 ___
 ## 2. 0510
 
-直播網址：[上午](https://www.youtube.com/watch?v=j6IfJ4IW8ws)
+直播網址：[上午](https://www.youtube.com/watch?v=j6IfJ4IW8ws)/[下午](https://www.youtube.com/watch?v=ubAmIJHRqfk)
 
 *今日重點*：
 - 學習程式碼
@@ -49,4 +49,14 @@ ___
 - 邏輯運算子
 - 布林值(bool): True、False
 - for 迴圈：遍歷(迭代)\->重複執行
+  - for ... in ...：明確知道執行的次數
+  - 資料結構：資料類型：list、tuple、dictionary、set
+- while迴圈：無限迴圈
+
+
+
+
+
+
+
 
