@@ -7,7 +7,7 @@ ___
 直播網址：[上午](https://youtube.com/live/ds8RirjEo4M)/[下午](https://www.youtube.com/watch?v=EXC_aE3XmtI)
 
 *今日重點*：
-- 設立變數
+- 設立變數 >> 暫存的值，非資料結構
 - 數學運算子/複合指定運算子/運算子的優先順序
 - 運算式(會傳出值)/敘述式(不會傳出值)
 - 只有數值型別可做數學運算
@@ -49,14 +49,31 @@ ___
 - 邏輯運算子
 - 布林值(bool): True、False
 - for 迴圈：遍歷(迭代)\->重複執行
-  - for 變數 in 串列資料：for ... in ... **明確知道執行的次數**
-  - 資料結構：資料類型：list、tuple、dictionary、set
+  - for 變數 in 串列資料(list)：for ... in ... **明確知道執行的次數**
+  - **資料結構**：資料類型：list、tuple、dictionary、set
 - while迴圈：無限迴圈，需要建立變數來控制while的執行與否，放在while迴圈的條件式內
   - while 條件式(傳回布林值)
   - 若wlile迴圈執行條件為True，則一直重複執行，直到條件為False才停止
   - 步驟：建立變數->比較變數->改變變數的值
   - 使迴圈中止：**break / continue**   
     -> **break**會使用在if判斷式中，若成立則`提前跳出迴圈`；**continue**若成立則跳過本次迴圈剩餘程式碼，`直接跳至下一輪迴圈`。
+
+
+
+
+
+___
+## 3. 0517
+
+直播網址：[上午](https://www.youtube.com/watch?v=TD-aKNc1on0)
+
+*今日重點*：
+- 基本資料結構 >> 儲存於記憶體(從excel檔、資料庫...儲存至記憶體)
+  1. list
+  2. dictionary
+  3. set >> 支援數學上的集合運算，包括交集（&）、聯集（|）、差集（-）、對稱差集（^）等，非常適合用來處理需要比較、篩選、合併資料的情境
+- 結構化程式碼、結構化專案，需使用本地端編輯軟體，例：anaconda(但佔大量記憶體，功能齊全適合初學者使用)、PyCharm(開發python用)、Visual Studio Code(Free and Open Source)
+- 
 
 
 
