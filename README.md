@@ -65,7 +65,7 @@ ___
 ___
 ## 3. 0517
 
-直播網址：[上午](https://www.youtube.com/watch?v=TD-aKNc1on0)
+直播網址：[上午](https://www.youtube.com/watch?v=TD-aKNc1on0)[下午](https://www.youtube.com/watch?v=CRB_ymO10ac)
 
 *今日重點*：
 - 基本資料結構 >> 儲存於記憶體(從excel檔、資料庫...儲存至記憶體)
@@ -81,15 +81,7 @@ ___
     git config --global user.name "Ann Huang"
     git config --global user.email "ann82925902@gmail.com"
     git config --global pull.rebase false
-<<<<<<< HEAD
-   
-在VS code：原始檔控制 >> github-複製存放庫 >> 存放位置：文件 >> 新增資料夾：github >> 選取為存放資料的目的地
 
-  
-
-
-
-=======
 在VS code：原始檔控制 >> github-複製存放庫 >> 存放位置：文件 >> 新增資料夾：github >> 選取為存放資料的目的地
 安裝mini conda
 
