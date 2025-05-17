@@ -81,7 +81,8 @@ ___
     git config --global user.name "Ann Huang"
     git config --global user.email "ann82925902@gmail.com"
     git config --global pull.rebase false
-- 
+在VS code：原始檔控制 >> github-複製存放庫 >> 存放位置：文件 >> 新增資料夾：github >> 選取為存放資料的目的地
+
 
 
 
