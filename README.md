@@ -65,7 +65,7 @@ ___
 ___
 ## 3. 0517
 
-直播網址：[上午](https://www.youtube.com/watch?v=TD-aKNc1on0)[下午](https://www.youtube.com/watch?v=CRB_ymO10ac)
+直播網址：[上午](https://www.youtube.com/watch?v=TD-aKNc1on0)/[下午](https://www.youtube.com/watch?v=CRB_ymO10ac)
 
 *今日重點*：
 - 基本資料結構 >> 儲存於記憶體(從excel檔、資料庫...儲存至記憶體)
