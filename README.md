@@ -73,9 +73,15 @@ ___
   2. dictionary
   3. set >> 支援數學上的集合運算，包括交集（&）、聯集（|）、差集（-）、對稱差集（^）等，非常適合用來處理需要比較、篩選、合併資料的情境
 - 結構化程式碼、結構化專案，需使用本地端編輯軟體，例：anaconda(但佔大量記憶體，功能齊全適合初學者使用)、PyCharm(開發python用)、Visual Studio Code(Free and Open Source)
+- VS Code >> windows版本要自行安裝git >> 將終端機設定預設為cmd
+- [設定教學](https://github.com/roberthsu2003/python/tree/master/vscode%E8%A8%AD%E5%AE%9A)
+
+  ### **git設定**
+    ```
+    git config --global user.name "Ann Huang"
+    git config --global user.email "ann82925902@gmail.com"
+    git config --global pull.rebase false
 - 
-
-
 
 
 
