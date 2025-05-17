@@ -101,7 +101,7 @@ ___
 
   ### 檢查目前已建立的虛擬環境
     conda env list
->>>>>>> fe9d5e0d7a58b753031d844ed8b24b1cee327a6c
+
 
 
 
