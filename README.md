@@ -73,6 +73,7 @@ ___
   2. dictionary
   3. set >> 支援數學上的集合運算，包括交集（&）、聯集（|）、差集（-）、對稱差集（^）等，非常適合用來處理需要比較、篩選、合併資料的情境
 - 結構化程式碼、結構化專案，需使用本地端編輯軟體，例：anaconda(但佔大量記憶體，功能齊全適合初學者使用)、PyCharm(開發python用)、Visual Studio Code(Free and Open Source)
+- 建立虛擬環境：每個不同的專案都要建立不同的虛擬環境
 - VS Code >> windows版本要自行安裝git >> 將終端機設定預設為cmd
 - [設定教學](https://github.com/roberthsu2003/python/tree/master/vscode%E8%A8%AD%E5%AE%9A)
 
@@ -81,10 +82,11 @@ ___
     git config --global user.name "Ann Huang"
     git config --global user.email "ann82925902@gmail.com"
     git config --global pull.rebase false
+在VS code：原始檔控制 >> github-複製存放庫 >> 存放位置：文件 >> 新增資料夾：github >> 選取為存放資料的目的地   
 
-在VS code：原始檔控制 >> github-複製存放庫 >> 存放位置：文件 >> 新增資料夾：github >> 選取為存放資料的目的地
-安裝mini conda
+**安裝mini conda**   
 
+設定：   
   ### 取消termail一開始就進入base虛擬環境
     conda config --set auto_activate_base false
 
@@ -93,6 +95,16 @@ ___
 
   ### 檢查目前已建立的虛擬環境
     conda env list
+
+**在VS code中安裝jupyter、python**   
+
+新增資料夾、新增任何修改，先儲存，變更>>暫存變更>>輸入說明>>提交>>同步變更>>VS code及GitHub就會同步剛才做的修改。
+
+
+
+
+
+
 
 
 
