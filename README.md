@@ -82,10 +82,16 @@ ___
     git config --global user.email "ann82925902@gmail.com"
     git config --global pull.rebase false
 在VS code：原始檔控制 >> github-複製存放庫 >> 存放位置：文件 >> 新增資料夾：github >> 選取為存放資料的目的地
+安裝mini conda
 
+  ### 取消termail一開始就進入base虛擬環境
+    conda config --set auto_activate_base false
 
+  ### conda init
+    conda init --all bash
 
-
+  ### 檢查目前已建立的虛擬環境
+    conda env list
 
 
 
