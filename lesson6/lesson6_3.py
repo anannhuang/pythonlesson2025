@@ -9,10 +9,10 @@ def play_game():
     print("===============猜數字遊戲=================:\n")
     while(True):
         count += 1
-        keyin = int(input("猜數字範圍{0}~{1}:".format(min, max)))
+        keyin = int(input("猜數字範圍{0}~{1}：".format(min, max)))
         if(keyin >=min and keyin <= max):
             if(keyin == target):
-                print("賓果!猜對了, 答案是:", target)
+                print("賓果!猜對了, 答案是：",target)
                 print("您猜了",count,"次")
                 break
             elif (keyin > target):
@@ -27,8 +27,8 @@ def play_game():
 
 while (True):   
     play_game()
-    play_again = input("再玩一次(y,n):")
-    if(play_again == 'n'):
+    play_again = input("再玩一次(y,n)：")
+    if(play_again != 'y'):
         break
 
 print("遊戲結束")
