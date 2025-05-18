@@ -2,7 +2,7 @@
 致理python大數據分析  
 [google meet上課網址](https://meet.google.com/qkf-btyj-jnz)
 ___
-## 1. 0503
+## [1. 0503](https://github.com/anannhuang/pythonlesson2025/tree/main/lesson)
 
 直播網址：[上午](https://youtube.com/live/ds8RirjEo4M)/[下午](https://www.youtube.com/watch?v=EXC_aE3XmtI)
 
@@ -34,7 +34,7 @@ __HW: 學習markdown語法__ [github中文版說明](https://gist.github.com/bil
 
 
 ___
-## 2. 0510
+## [2. 0510](https://github.com/anannhuang/pythonlesson2025/tree/main/lesson3)
 
 直播網址：[上午](https://www.youtube.com/watch?v=j6IfJ4IW8ws)/[下午](https://www.youtube.com/watch?v=ubAmIJHRqfk)
 
@@ -58,7 +58,7 @@ ___
 
 
 ___
-## 3. [0517](https://github.com/anannhuang/pythonlesson2025/tree/main/lesson6)
+## [3. 0517](https://github.com/anannhuang/pythonlesson2025/tree/main/lesson6)
 
 直播網址：[上午](https://www.youtube.com/watch?v=TD-aKNc1on0)/[下午](https://www.youtube.com/watch?v=CRB_ymO10ac)
 
