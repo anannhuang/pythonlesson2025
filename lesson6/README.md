@@ -78,12 +78,12 @@
   **一個專案對應一個虛擬環境！**
 
 ### - 結構式程式碼
-  自訂funtion：用"def"，設定一個功能，不算在主程式中的程式碼
-  要呼叫自訂的funtion才會執行程式
+  自訂function：用"def"，設定一個功能，不算在主程式中的程式碼
+  要呼叫自訂的function才會執行程式
   將複雜的程式碼包裝起來，變成簡單的程式碼，更有邏輯！！   
   [參考lesson6_3.py](https://github.com/anannhuang/pythonlesson2025/blob/main/lesson6/lesson6_3.py)   
   ```
-  def funtion1():
+  def function1():
   ```
 
 **記憶體區塊**
