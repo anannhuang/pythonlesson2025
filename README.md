@@ -58,7 +58,7 @@ ___
 
 
 ___
-## 3. [0517](C:\Users\ann82\OneDrive\Documents\github\pythonlesson2025\lesson6\README.md)
+## 3. [0517](https://github.com/anannhuang/pythonlesson2025/tree/main/lesson6)
 
 直播網址：[上午](https://www.youtube.com/watch?v=TD-aKNc1on0)/[下午](https://www.youtube.com/watch?v=CRB_ymO10ac)
 
