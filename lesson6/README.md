@@ -40,7 +40,7 @@
 在VS code：原始檔控制 >> github-複製存放庫(從github上複製) >> 存放位置：文件 >> 新增資料夾：github >> 選取為存放資料的目的地>>複製的資料庫便會出現在檔案總管   
 
 **[安裝miniconda](https://www.anaconda.com/download/success)**   
-<u>*需額外勾選同意將miniconda加入my PATH environment variable*\=>(不加入會無法輸入指令)</u> 
+<u>*需額外勾選同意將miniconda加入my PATH environment variable* \->(不加入會無法輸入指令)</u> 
 
 [**miniconda設定教學**](https://github.com/roberthsu2003/python/tree/master/mini_conda)   
 步驟：   
