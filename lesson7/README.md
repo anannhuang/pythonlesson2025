@@ -1,6 +1,6 @@
 ## 4. 0524
 
-直播網址：[上午](https://www.youtube.com/watch?v=ZGaOBcsPJUY)
+直播網址：[上午](https://www.youtube.com/watch?v=ZGaOBcsPJUY)/[下午](https://www.youtube.com/watch?v=vdRyEXHGl0g)
 
 ### *今日重點*：
 - 內建的function
