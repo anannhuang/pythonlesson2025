@@ -25,6 +25,6 @@ def main():
     print(get_state(bmi))
 
 #結構化程式碼
-#主程式：
+#此處為主程式：
 if __name__ == '__main__':
     main()
