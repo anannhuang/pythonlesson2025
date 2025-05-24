@@ -109,7 +109,8 @@ if __name__ == '__main__':
 ```
 
 
-
+__HW:__
+[Data Analysis預習](https://github.com/roberthsu2003/PythonForDataAnalysis)
 
 
 
