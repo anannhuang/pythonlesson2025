@@ -1,4 +1,4 @@
-#建立module，結構化專案
+#建立module，目的為結構化專案
 #在主執行檔：lesson8_1.py中import此module
 
 def calculate_bmi(height:int, weight:int)->float:
