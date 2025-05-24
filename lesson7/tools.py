@@ -1,4 +1,5 @@
-#module
+#建立module，結構化專案
+#在主執行檔：lesson7_2.py中import此module
 
 def calculate_bmi(height:int, weight:int)->float:
     return weight / (height / 100) ** 2
