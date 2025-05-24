@@ -102,3 +102,8 @@ typehint 型別提示->None->不傳出值
 def funcion()->None:
 ```
 
+讓程式碼執行主程式：
+```
+if __name__ == '__main__':
+    main()
+```
