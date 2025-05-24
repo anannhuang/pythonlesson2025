@@ -5,7 +5,7 @@
 #from edu.tools import calculate_bmi, get_state
 
 #從edu資料夾中的tools module，import calculate_bmi, get_state兩個function
-#且分別命名小名(用as)為a1, a2
+#且分別重新命名(用as)為a1, a2
 from edu.tools import calculate_bmi as a1
 from edu.tools import get_state as a2
 
