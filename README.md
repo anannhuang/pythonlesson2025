@@ -120,4 +120,4 @@ ___
 直播網址：[上午](https://www.youtube.com/watch?v=uj32e0eMqnw)
 
 ### *今日重點*：
-
+1. 資料的檔案類型：csv(簡單的表格資料) / json(複雜的資料類型) / excel(簡單的表格資料)
