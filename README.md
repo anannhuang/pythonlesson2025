@@ -124,7 +124,7 @@ ___
 2. 用ai協助寫程式及完善程式：gemini code assist、github copilot
 3. 使用python open()讀取csv檔
 4. import內建的csv module：使用csv.reader、csv.DictReader
-
+5. 安裝外部套件
 
 
 
