@@ -114,4 +114,10 @@ __HW:__
 
 
 
+___
+## 5. 0607
+
+直播網址：[上午](https://www.youtube.com/watch?v=uj32e0eMqnw)
+
+### *今日重點*：
 
