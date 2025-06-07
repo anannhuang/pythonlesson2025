@@ -121,7 +121,7 @@ ___
 
 ### *今日重點*：
 1. 資料的檔案類型：csv(簡單的表格資料) / json(複雜的資料類型) / excel(簡單的表格資料)
-2. 用ai協助寫程式完善程式：gemini code assist、github copilot
+2. 用ai協助寫程式及完善程式：gemini code assist、github copilot
 3. 使用python open()讀取csv檔
 4. import內建的csv module：使用csv.reader、csv.DictReader
 
