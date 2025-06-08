@@ -77,13 +77,14 @@ ___
 ___
 ## 4. 0524
 
-直播網址：[上午](https://www.youtube.com/watch?v=ZGaOBcsPJUY)
+直播網址：[上午](https://www.youtube.com/watch?v=ZGaOBcsPJUY)/[下午](https://www.youtube.com/watch?v=vdRyEXHGl0g)
 
 ### *今日重點*：
 - 內建的function
 - 內建的module
-- 自訂的function
-- *function分為會傳出值及不傳出值*
+- 自訂的function：目的是結構化程式碼
+- 自訂的module, package：目的是結構化專案
+- *function分為會傳出值及不傳出值*：function(參數) / function()
 - **function的功能：**   
   1. 結構化程式碼
   2. 簡化邏輯思考的複雜度
