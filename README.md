@@ -122,10 +122,26 @@ ___
 
 ### *今日重點*：
 1. 資料的檔案類型：csv(簡單的表格資料) / json(複雜的資料類型) / excel(簡單的表格資料)
-2. 用ai協助寫程式及完善程式：gemini code assist、github copilot
-3. 使用python open()讀取csv檔
-4. import內建的csv module：使用csv.reader、csv.DictReader
-5. 安裝外部套件
+2. 善用ai協助寫程式及完善程式：gemini code assist、github copilot
+3. import內建的csv module：使用csv.reader、csv.DictReader   
+並使用python open()讀取csv檔   
+＊建議加上 newline='' 參數避免換行符號問題，並指定 encoding='utf-8' 以確保正確解碼（視檔案編碼而定）    
+＊使用 with 語句確保檔案使用完後自動關閉，避免資源洩漏。
+4. 如果想用欄位名稱讀取資料，可以改用 csv.DictReader，會將每列資料轉成字典
+5. 使用pip安裝外部套件(e.g. pandas、numpy、matplotlib、openpyxl、seaborn、jupyter......)：   
+新增一個.txt檔，內容為需要安裝的套件名稱，並在虛擬環境的終端機中輸入：pip install -r requirements.txt   
+\->即可在虛擬環境中安裝所需的套件。   
+**注意！！** 使用 pip install -r requirements.txt 時，務必保持版本明確、**使用虛擬環境** (避免套件安裝到全域環境，導致不同專案間版本衝突或系統環境被污染)、避免權限問題，並針對網路環境做適當調整，才能確保安裝過程順利且專案環境穩定。
+
+
+
+___
+## 6. 0614 lesson11/lesson12
+
+直播網址：[上午]()/[下午]()
+
+### *今日重點*：
+
 
 
 
