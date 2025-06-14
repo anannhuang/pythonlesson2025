@@ -145,6 +145,7 @@ ___
 https://numpy.org/doc/stable/ (說明書: [API Reference](https://numpy.org/doc/stable/reference/index.html#reference))
 2. Matplotlib:   
 建立Axes圖表
+3. 繪製圖表：常態分布、pie
 
 
 
