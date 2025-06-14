@@ -138,12 +138,13 @@ ___
 ___
 ## 6. 0614 lesson11/lesson12
 
-直播網址：[上午](https://www.youtube.com/watch?v=5FTG01CcnRg)/[下午]()
+直播網址：[上午](https://www.youtube.com/watch?v=5FTG01CcnRg)/[下午](https://www.youtube.com/watch?v=T1uInJbtqXM)
 
 ### *今日重點*：
 1. Numpy:   
 https://numpy.org/doc/stable/ (說明書: [API Reference](https://numpy.org/doc/stable/reference/index.html#reference))
-
+2. Matplotlib:   
+建立Axes圖表
 
 
 
