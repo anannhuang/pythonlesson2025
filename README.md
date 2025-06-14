@@ -138,9 +138,10 @@ ___
 ___
 ## 6. 0614 lesson11/lesson12
 
-直播網址：[上午]()/[下午]()
+直播網址：[上午](https://www.youtube.com/watch?v=5FTG01CcnRg)/[下午]()
 
 ### *今日重點*：
+1. Numpy
 
 
 
