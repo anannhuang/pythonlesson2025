@@ -141,7 +141,8 @@ ___
 直播網址：[上午](https://www.youtube.com/watch?v=5FTG01CcnRg)/[下午]()
 
 ### *今日重點*：
-1. Numpy
+1. Numpy:   
+https://numpy.org/doc/stable/ (說明書: [API Reference](https://numpy.org/doc/stable/reference/index.html#reference))
 
 
 
