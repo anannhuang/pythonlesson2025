@@ -34,7 +34,7 @@ __HW: 學習markdown語法__ [github中文版說明](https://gist.github.com/bil
 
 
 ___
-## 2. 0510 [lesson3](https://github.com/anannhuang/pythonlesson2025/tree/main/lesson3)
+## 2. 0510 [lesson3](lesson3)
 
 直播網址：[上午](https://www.youtube.com/watch?v=j6IfJ4IW8ws)/[下午](https://www.youtube.com/watch?v=ubAmIJHRqfk)
 
@@ -58,7 +58,7 @@ ___
 
 
 ___
-## 3. 0517 [lesson6](https://github.com/anannhuang/pythonlesson2025/tree/main/lesson6)
+## 3. 0517 [lesson6](lesson6)
 
 直播網址：[上午](https://www.youtube.com/watch?v=TD-aKNc1on0)/[下午](https://www.youtube.com/watch?v=CRB_ymO10ac)
 
@@ -75,7 +75,7 @@ ___
 
 
 ___
-## 4. 0524 [lesson7](lesson7)/lesson8
+## 4. 0524 [lesson7](lesson7)/[lesson8](lesson8)
 
 直播網址：[上午](https://www.youtube.com/watch?v=ZGaOBcsPJUY)/[下午](https://www.youtube.com/watch?v=vdRyEXHGl0g)
 
@@ -116,7 +116,7 @@ __HW:__
 
 
 ___
-## 5. 0607 lesson9/lesson10
+## 5. 0607 [lesson9](lesson9)/[lesson10](lesson10)
 
 直播網址：[上午](https://www.youtube.com/watch?v=uj32e0eMqnw)/[下午](https://www.youtube.com/watch?v=UHfRyhXsQSE)
 
@@ -136,7 +136,7 @@ ___
 
 
 ___
-## 6. 0614 lesson11/lesson12
+## 6. 0614 [lesson11](lesson11)/[lesson12](lesson12)
 
 直播網址：[上午](https://www.youtube.com/watch?v=5FTG01CcnRg)/[下午](https://www.youtube.com/watch?v=T1uInJbtqXM)
 
@@ -152,12 +152,12 @@ https://numpy.org/doc/stable/ (說明書: [API Reference](https://numpy.org/doc/
 
 
 ___
-## 7. 0621 lesson13
+## 7. 0621 [lesson13](lesson13)
 
 直播網址：[上午](https://www.youtube.com/watch?v=w7S73kkpUXQ)/[下午]()
 
 ### *今日重點*：
-1. numpy如同工具箱：package，包含小工具箱：module，package是一個資料夾，裡面可以包含很多.py檔，也就是module，module中包含function、class、常數，
+1. numpy套件如同工具箱：package，包含小工具箱：module，package是一個資料夾，裡面可以包含很多.py檔，也就是module，module中包含function、class、常數，
 
 
 
