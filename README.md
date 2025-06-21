@@ -154,7 +154,7 @@ https://numpy.org/doc/stable/ (說明書: [API Reference](https://numpy.org/doc/
 ___
 ## 7. 0621 [lesson13](lesson13)
 
-直播網址：[上午](https://www.youtube.com/watch?v=w7S73kkpUXQ)/[下午]()
+直播網址：[上午](https://www.youtube.com/watch?v=w7S73kkpUXQ)/[下午](https://www.youtube.com/watch?v=u5uyQwSIbRA)
 
 ### *今日重點*：
 1. numpy套件如同工具箱：package，包含小工具箱：module，package是一個資料夾，裡面可以包含很多.py檔，也就是module，module中包含function、class、常數，
