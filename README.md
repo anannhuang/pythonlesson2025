@@ -158,7 +158,7 @@ ___
 
 ### *今日重點*：
 1. numpy套件如同工具箱：package，包含小工具箱：module，package是一個資料夾，裡面可以包含很多.py檔，也就是module，module中包含function、class、常數，
-
+2. 使用了numpy中的random module，及此module中的function: random
 
 
 
