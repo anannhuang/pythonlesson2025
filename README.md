@@ -75,7 +75,7 @@ ___
 
 
 ___
-## 4. 0524 lesson7/lesson8
+## 4. 0524 [lesson7](lesson7)/lesson8
 
 直播網址：[上午](https://www.youtube.com/watch?v=ZGaOBcsPJUY)/[下午](https://www.youtube.com/watch?v=vdRyEXHGl0g)
 
@@ -141,11 +141,27 @@ ___
 直播網址：[上午](https://www.youtube.com/watch?v=5FTG01CcnRg)/[下午](https://www.youtube.com/watch?v=T1uInJbtqXM)
 
 ### *今日重點*：
-1. Numpy:   
+1. Numpy (陣列運算):   
 https://numpy.org/doc/stable/ (說明書: [API Reference](https://numpy.org/doc/stable/reference/index.html#reference))
 2. Matplotlib:   
 建立Axes圖表
 3. 繪製圖表：常態分布、pie
+4. 繪圖要有：畫布、子圖
+
+
+
+
+___
+## 7. 0621 lesson13
+
+直播網址：[上午](https://www.youtube.com/watch?v=w7S73kkpUXQ)/[下午]()
+
+### *今日重點*：
+1. numpy如同工具箱：package，包含小工具箱：module，package是一個資料夾，裡面可以包含很多.py檔，也就是module，module中包含function、class、常數，
+
+
+
+
 
 
 
