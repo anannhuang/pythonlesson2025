@@ -164,9 +164,9 @@ ___
 
 
 ___
-## 8. 0628 [lesson14](lesson14)
+## 8. 0628 [lesson14](lesson14)/[lesson15](lesson15)
 
-直播網址：[上午](https://www.youtube.com/watch?v=Jy4xl1Fafcw)/[下午]()
+直播網址：[上午](https://www.youtube.com/watch?v=Jy4xl1Fafcw)/[下午](https://www.youtube.com/watch?v=40oAFYa6l4w)
 
 ### *今日重點*：
 1. DataFrame：   
@@ -175,3 +175,4 @@ ___
   - 搜尋(使用DataFrame及mask)：mask當作遮色片，篩選出要的資料
 2. pd.to_datetime()：將字串類型的日期轉成datetime
 3. 從yahoo finance抓取歷史資料：爬蟲，安裝套件yfinance
+4. 設lesson15為專案，將lesson15資料夾作為主程式的根目錄，在整合式終端機中執行
