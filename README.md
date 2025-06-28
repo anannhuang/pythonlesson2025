@@ -174,4 +174,4 @@ ___
   - 透過列的選取
   - 搜尋(使用DataFrame及mask)：mask當作遮色片，篩選出要的資料
 2. pd.to_datetime()：將字串類型的日期轉成datetime
-3. 
+3. 從yahoo finance抓取歷史資料：爬蟲，安裝套件yfinance
