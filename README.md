@@ -157,12 +157,21 @@ ___
 直播網址：[上午](https://www.youtube.com/watch?v=w7S73kkpUXQ)/[下午](https://www.youtube.com/watch?v=u5uyQwSIbRA)
 
 ### *今日重點*：
-1. numpy套件如同工具箱：package，包含小工具箱：module，package是一個資料夾，裡面可以包含很多.py檔，也就是module，module中包含function、class、常數，
+1. numpy套件如同工具箱：package，包含小工具箱：module，package是一個資料夾，裡面可以包含很多.py檔，也就是module，module中包含function、class、常數。
 2. 使用了numpy中的random module，及此module中的function: random
 3. pandas
 
 
 
+___
+## 8. 0628 [lesson14](lesson14)
 
+直播網址：[上午](https://www.youtube.com/watch?v=Jy4xl1Fafcw)/[下午]()
 
-
+### *今日重點*：
+1. DataFrame：   
+  - 透過欄的選取
+  - 透過列的選取
+  - 搜尋(使用DataFrame及mask)：mask當作遮色片，篩選出要的資料
+2. pd.to_datetime()：將字串類型的日期轉成datetime
+3. 
