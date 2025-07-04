@@ -73,7 +73,14 @@ def show_streamlit_table():
     """
     使用 Streamlit 顯示收盤價表格與可互動的折線圖（st.line_chart，圖上可直接縮放/平移）
     """
-    st.title("台股每日收盤價")
+    # 標題與現在時間同列顯示
+    today_str = datetime.now().strftime('%Y-%m-%d')
+    st.markdown(f"""
+    <div style='display: flex; align-items: center; justify-content: space-between;'>
+        <span style='font-size: 28px; font-weight: bold; margin-bottom: 0;'>台股每日收盤價</span>
+        <span style='color: #888; font-size:18px; margin-left: 20px;'>今天日期：{today_str}</span>
+    </div>
+    """, unsafe_allow_html=True)
     df = get_close_price_df()
     if df.empty:
         st.warning("沒有資料可顯示")
@@ -81,23 +88,49 @@ def show_streamlit_table():
     df = df.sort_index(ascending=False)
     if not pd.api.types.is_datetime64_any_dtype(df.index):
         df.index = pd.to_datetime(df.index)
-    # 將 index 轉為日期字串（無時間）
-    df_display = df.copy()
-    df_display.index = df_display.index.strftime('%Y-%m-%d')
-    st.dataframe(df_display)
-    st.subheader("股價走勢折線圖 (可直接在圖上縮放/平移，支援股票篩選)")
-    import altair as alt
-    # 股票篩選器
-    stock_options = list(df.columns)
-    selected_stocks = st.multiselect(
-        "請選擇要顯示的股票：",
-        options=stock_options,
-        default=stock_options
-    )
+
+
+    # 日期與股票篩選器並列顯示
+    col1, col2 = st.columns([1, 1])
+    with col1:
+        date_min = df.index.min().date()
+        date_max = df.index.max().date()
+        date_range = st.date_input(
+            "日期區間",
+            value=(date_min, date_max),
+            min_value=date_min,
+            max_value=date_max,
+            key='date_range',
+            help='選擇要顯示的日期範圍'
+        )
+    with col2:
+        stock_options = list(df.columns)
+        selected_stocks = st.multiselect(
+            "股票",
+            options=stock_options,
+            default=stock_options,
+            key='stock_select',
+            help='選擇要顯示的股票'
+        )
+    # 篩選資料
+    if isinstance(date_range, tuple):
+        start_date, end_date = date_range
+    else:
+        start_date = end_date = date_range
+    mask = (df.index.date >= start_date) & (df.index.date <= end_date)
+    df = df.loc[mask]
     if not selected_stocks:
         st.info("請至少選擇一檔股票")
         return
     df_filtered = df[selected_stocks]
+
+    # 表格顯示（日期無時間）
+    df_display = df_filtered.copy()
+    df_display.index = df_display.index.strftime('%Y-%m-%d')
+    st.dataframe(df_display, height=210)
+
+    st.subheader("股價走勢折線圖")
+    import altair as alt
     # Altair 資料轉換
     df_reset = df_filtered.reset_index().rename(columns={df.index.name or 'index': '日期'})
     df_melt = df_reset.melt(id_vars=['日期'], var_name='股票', value_name='收盤價')
