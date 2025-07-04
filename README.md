@@ -176,3 +176,8 @@ ___
 2. pd.to_datetime()：將字串類型的日期轉成datetime
 3. 從yahoo finance抓取歷史資料：爬蟲，安裝套件yfinance
 4. 設lesson15為專案，將lesson15資料夾作為主程式的根目錄，在整合式終端機中執行
+5. 做一個視窗(streamlit)：查詢股價及顯示股價趨勢折線圖
+6. 若要在終端機呼叫streamlit app (主程式檔名 app.py)，輸入：   
+```
+streamlit run app.py
+```
