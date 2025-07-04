@@ -78,21 +78,52 @@ def show_streamlit_table():
     if df.empty:
         st.warning("沒有資料可顯示")
         return
-    df = df.sort_index()
+    df = df.sort_index(ascending=False)
     if not pd.api.types.is_datetime64_any_dtype(df.index):
         df.index = pd.to_datetime(df.index)
-    st.dataframe(df)
-    st.subheader("股價走勢折線圖 (可直接在圖上縮放/平移)")
+    # 將 index 轉為日期字串（無時間）
+    df_display = df.copy()
+    df_display.index = df_display.index.strftime('%Y-%m-%d')
+    st.dataframe(df_display)
+    st.subheader("股價走勢折線圖 (可直接在圖上縮放/平移，支援股票篩選)")
     import altair as alt
-    # 將 index reset 以便 Altair 使用
-    df_reset = df.reset_index().rename(columns={df.index.name or 'index': '日期'})
+    # 股票篩選器
+    stock_options = list(df.columns)
+    selected_stocks = st.multiselect(
+        "請選擇要顯示的股票：",
+        options=stock_options,
+        default=stock_options
+    )
+    if not selected_stocks:
+        st.info("請至少選擇一檔股票")
+        return
+    df_filtered = df[selected_stocks]
+    # Altair 資料轉換
+    df_reset = df_filtered.reset_index().rename(columns={df.index.name or 'index': '日期'})
     df_melt = df_reset.melt(id_vars=['日期'], var_name='股票', value_name='收盤價')
-    chart = alt.Chart(df_melt).mark_line().encode(
+    # Altair 互動游標與輔助線
+    import altair as alt
+    nearest = alt.selection(type='single', nearest=True, on='mouseover', fields=['日期'], empty='none')
+    line = alt.Chart(df_melt).mark_line().encode(
         x=alt.X('日期:T', title='日期'),
         y=alt.Y('收盤價:Q', title='收盤價'),
-        color=alt.Color('股票:N', title='股票'),
+        color=alt.Color('股票:N', title='股票')
+    )
+    selectors = alt.Chart(df_melt).mark_point(size=60, filled=True, opacity=0).encode(
+        x='日期:T',
+        y='收盤價:Q',
+        color='股票:N',
         tooltip=['日期:T', '股票:N', '收盤價:Q']
-    ).interactive()
+    ).add_selection(nearest)
+    # 垂直輔助線
+    vline = alt.Chart(df_melt).mark_rule(color='gray', strokeDash=[4,4]).encode(
+        x='日期:T'
+    ).transform_filter(nearest)
+    # 水平輔助線
+    hline = alt.Chart(df_melt).mark_rule(color='gray', strokeDash=[4,4]).encode(
+        y='收盤價:Q'
+    ).transform_filter(nearest)
+    chart = (line + selectors + vline + hline).interactive()
     st.altair_chart(chart, use_container_width=True)
 
 
