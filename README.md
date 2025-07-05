@@ -192,6 +192,6 @@ ___
 1. 
 2. series裡的一個實體方法apply，可以直接轉換資料類型並傳出相同的series
 3. groupby()：將有重複的部分組成群組，做資料統計、群組運算...\->再做樞紐分析
-4. 
-5. 
-6. 
+4. Gemini Code Assist 搭配 Gemini CLI，資料夾名稱：.gemini
+5. GitHub Copilot，資料夾名稱：.github
+6. 安裝Gemini CLI
