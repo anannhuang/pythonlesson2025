@@ -156,7 +156,7 @@ def show_streamlit_table():
     st.altair_chart(chart, use_container_width=True)
 
     # 表格顯示（日期無時間）
-    df_display = df_filtered.copy()
+    df_display = df_filtered.copy().round(2)
     df_display.index = df_display.index.strftime('%Y-%m-%d')
     st.dataframe(df_display, height=210)
 
