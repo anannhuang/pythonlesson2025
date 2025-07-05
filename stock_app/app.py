@@ -130,33 +130,29 @@ def show_streamlit_table():
     # 圖表顯示
     st.subheader("股價走勢折線圖")
     import altair as alt
-    # Altair 資料轉換
-    df_reset = df_filtered.reset_index().rename(columns={df.index.name or 'index': '日期'})
-    df_melt = df_reset.melt(id_vars=['日期'], var_name='股票', value_name='收盤價')
-    # Altair 互動游標與輔助線
-    import altair as alt
-    nearest = alt.selection(type='single', nearest=True, on='mouseover', fields=['日期'], empty='none')
-    line = alt.Chart(df_melt).mark_line().encode(
-        x=alt.X('日期:T', title='日期'),
-        y=alt.Y('收盤價:Q', title='收盤價'),
-        color=alt.Color('股票:N', title='股票')
-    )
-    selectors = alt.Chart(df_melt).mark_point(size=60, filled=True, opacity=0).encode(
-        x='日期:T',
-        y='收盤價:Q',
-        color='股票:N',
-        tooltip=['日期:T', '股票:N', '收盤價:Q']
-    ).add_selection(nearest)
-    # 垂直輔助線
-    vline = alt.Chart(df_melt).mark_rule(color='gray', strokeDash=[4,4]).encode(
-        x='日期:T'
-    ).transform_filter(nearest)
-    # 水平輔助線
-    hline = alt.Chart(df_melt).mark_rule(color='gray', strokeDash=[4,4]).encode(
-        y='收盤價:Q'
-    ).transform_filter(nearest)
-    chart = (line + selectors + vline + hline).interactive()
-    st.altair_chart(chart, use_container_width=True)
+    for stock in selected_stocks:
+        df_single = df_filtered[[stock]].reset_index().rename(columns={df.index.name or 'index': '日期', stock: '收盤價'})
+        df_single['股票'] = stock
+        nearest = alt.selection(type='single', nearest=True, on='mouseover', fields=['日期'], empty='none')
+        line = alt.Chart(df_single).mark_line().encode(
+            x=alt.X('日期:T', title='日期'),
+            y=alt.Y('收盤價:Q', title='收盤價'),
+            color=alt.value('#1f77b4')
+        )
+        selectors = alt.Chart(df_single).mark_point(size=60, filled=True, opacity=0).encode(
+            x='日期:T',
+            y='收盤價:Q',
+            tooltip=['日期:T', '收盤價:Q']
+        ).add_selection(nearest)
+        vline = alt.Chart(df_single).mark_rule(color='gray', strokeDash=[4,4]).encode(
+            x='日期:T'
+        ).transform_filter(nearest)
+        hline = alt.Chart(df_single).mark_rule(color='gray', strokeDash=[4,4]).encode(
+            y='收盤價:Q'
+        ).transform_filter(nearest)
+        chart = (line + selectors + vline + hline).interactive()
+        st.markdown(f"#### {stock}")
+        st.altair_chart(chart, use_container_width=True)
 
     # 表格顯示（日期無時間）
     df_display = df_filtered.copy().round(2)
