@@ -65,7 +65,9 @@ def get_close_price_df():
         print("沒有資料")
         return pd.DataFrame()
     df = pd.DataFrame(close_dict)
+    df = df.apply(pd.to_numeric, errors='coerce')
     df = df.round(2)
+
     print(df)
     return df
 
