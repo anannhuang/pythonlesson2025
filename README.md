@@ -186,7 +186,7 @@ streamlit run app.py
 ___
 ## 9. 0704 [lesson16](lesson16)
 
-直播網址：[上午](https://www.youtube.com/watch?v=xMxhoUC7PsA)
+直播網址：[上午](https://www.youtube.com/watch?v=xMxhoUC7PsA)/[下午](https://www.youtube.com/watch?v=Ro2tHTgMl5o)
 
 ### *今日重點*：
 1. 
