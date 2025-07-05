@@ -154,6 +154,43 @@ def show_streamlit_table():
         st.markdown(f"#### {stock}")
         st.altair_chart(chart, use_container_width=True)
 
+    # 股價走勢比較視窗
+    st.subheader("股價走勢比較")
+    compare_stocks = st.multiselect(
+        "請選擇要比較的兩檔股票",
+        options=stock_options,
+        default=stock_options[:2],
+        key='compare_select',
+        help='選擇兩檔股票進行走勢比較',
+        max_selections=2
+    )
+    if len(compare_stocks) == 2:
+        df_compare = df_filtered[compare_stocks].reset_index().rename(columns={df.index.name or 'index': '日期'})
+        df_melt = df_compare.melt(id_vars=['日期'], var_name='股票', value_name='收盤價')
+        import altair as alt
+        nearest = alt.selection(type='single', nearest=True, on='mouseover', fields=['日期'], empty='none')
+        line = alt.Chart(df_melt).mark_line().encode(
+            x=alt.X('日期:T', title='日期'),
+            y=alt.Y('收盤價:Q', title='收盤價'),
+            color=alt.Color('股票:N', title='股票')
+        )
+        selectors = alt.Chart(df_melt).mark_point(size=60, filled=True, opacity=0).encode(
+            x='日期:T',
+            y='收盤價:Q',
+            color='股票:N',
+            tooltip=['日期:T', '股票:N', '收盤價:Q']
+        ).add_selection(nearest)
+        vline = alt.Chart(df_melt).mark_rule(color='gray', strokeDash=[4,4]).encode(
+            x='日期:T'
+        ).transform_filter(nearest)
+        hline = alt.Chart(df_melt).mark_rule(color='gray', strokeDash=[4,4]).encode(
+            y='收盤價:Q'
+        ).transform_filter(nearest)
+        chart = (line + selectors + vline + hline).interactive()
+        st.altair_chart(chart, use_container_width=True)
+    elif len(compare_stocks) > 0:
+        st.info("請選擇兩檔股票進行比較")
+
     # 表格顯示（日期無時間）
     df_display = df_filtered.copy().round(2)
     df_display.index = df_display.index.strftime('%Y-%m-%d')
