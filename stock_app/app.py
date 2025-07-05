@@ -77,7 +77,7 @@ def show_streamlit_table():
     today_str = datetime.now().strftime('%Y-%m-%d')
     st.markdown(f"""
     <div style='display: flex; align-items: center; justify-content: space-between;'>
-        <span style='font-size: 28px; font-weight: bold; margin-bottom: 0;'>台股每日收盤價</span>
+        <span style='font-size: 30px; font-weight: bold; margin-bottom: 0;'>台股每日收盤價</span>
         <span style='color: #888; font-size:18px; margin-left: 20px;'>今天日期：{today_str}</span>
     </div>
     """, unsafe_allow_html=True)
@@ -106,7 +106,7 @@ def show_streamlit_table():
     with col2:
         stock_options = list(df.columns)
         selected_stocks = st.multiselect(
-            "股票",
+            "請選取要顯示的股票",
             options=stock_options,
             default=stock_options,
             key='stock_select',
@@ -124,11 +124,7 @@ def show_streamlit_table():
         return
     df_filtered = df[selected_stocks]
 
-    # 表格顯示（日期無時間）
-    df_display = df_filtered.copy()
-    df_display.index = df_display.index.strftime('%Y-%m-%d')
-    st.dataframe(df_display, height=210)
-
+    # 圖表顯示
     st.subheader("股價走勢折線圖")
     import altair as alt
     # Altair 資料轉換
@@ -158,6 +154,11 @@ def show_streamlit_table():
     ).transform_filter(nearest)
     chart = (line + selectors + vline + hline).interactive()
     st.altair_chart(chart, use_container_width=True)
+
+    # 表格顯示（日期無時間）
+    df_display = df_filtered.copy()
+    df_display.index = df_display.index.strftime('%Y-%m-%d')
+    st.dataframe(df_display, height=210)
 
 
 if __name__ == "__main__":
